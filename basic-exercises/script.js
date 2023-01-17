@@ -108,9 +108,9 @@ let quartoAlbum = {
 
 };
   
-console.log(`O ${quartoAlbum.title} foi lançado em ${quartoAlbum.released}`); //forma de buscar algo no objeto
+console.log(`O 1º single de ${quartoAlbum.titulo} foi ${quartoAlbum.singles[0]}`); //forma de buscar algo no objeto
 
 quartoAlbum.melhorMusica = "early morning";
-personagem.lugarNasParadas += 4;
+quartoAlbum.lugarNasParadas += 4;
 
 console.log(`Lugar nas paradas atual: ${quartoAlbum.lugarNasParadas}`);
