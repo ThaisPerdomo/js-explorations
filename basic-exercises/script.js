@@ -133,17 +133,17 @@
 
 // console.log(`${personagem.nome} terminou sua faculdade em ${personagem.formacao[2].ano}`);
 
-let eu = {
-    nome: "thais",
-    sobrenome: "perdomo";
-    nomeCompleto: function() {
-        return this.nome + " " + this.sobrenome;
-        // poderia ser escrito assim tb: 
-        // return `${this.nome} ${this.sobrenome}`;
-    }
-} 
+// let eu = {
+//     nome: "thais",
+//     sobrenome: "perdomo",
+//     nomeCompleto: function() {
+//         return this.nome + " " + this.sobrenome;
+//         // poderia ser escrito assim tb: 
+//         // return `${this.nome} ${this.sobrenome}`;
+//     }
+// } 
 
-console.log(eu.nomeCompleto());
+// console.log(eu.nomeCompleto());
 
 // // Testando repeticoes com array
 // let fruits = ["apple", "orange", "grape"];
@@ -209,3 +209,4 @@ console.log(eu.nomeCompleto());
 // } else {
 //     console.log("não tem uva");
 // }
+
