@@ -93,24 +93,42 @@
 
 // // Aprendendo objetos:
 
-let quartoAlbum = {
-    titulo: "In The Zone", //propriedade
-    melhorMusica: 'showdown', // propriedade
-    lugarNasParadas: 1, 
+// let quartoAlbum = {
+//     titulo: "In The Zone", //propriedade
+//     melhorMusica: 'showdown', // propriedade
+//     lugarNasParadas: 1, 
 
-    pastAlbuns: {       // fazendo um objeto dentro do objeto
-        primeiro: 'baby one more time',  
-        segundo: 'oops i did it again',
-        terceiro: 'britney'
-    },
+//     pastAlbuns: {       // fazendo um objeto dentro do objeto
+//         primeiro: 'baby one more time',  
+//         segundo: 'oops i did it again',
+//         terceiro: 'britney'
+//     },
 
-    singles : ["toxic", "MATM","Everytime"],
+//     singles : ["toxic", "MATM","Everytime"],
 
-};
+// };
   
-console.log(`O 1º single de ${quartoAlbum.titulo} foi ${quartoAlbum.singles[0]}`); //forma de buscar algo no objeto
+// console.log(`O 1º single de ${quartoAlbum.titulo} foi ${quartoAlbum.singles[0]}`); //forma de buscar algo no objeto
 
-quartoAlbum.melhorMusica = "early morning";
-quartoAlbum.lugarNasParadas += 4;
+// quartoAlbum.melhorMusica = "early morning";
+// quartoAlbum.lugarNasParadas += 4;
 
-console.log(`Lugar nas paradas atual: ${quartoAlbum.lugarNasParadas}`);
+// console.log(`Lugar nas paradas atual: ${quartoAlbum.lugarNasParadas}`);
+
+// quartoAlbum.singles.push('Outrageous');
+
+// console.log(quartoAlbum.singles);
+
+// // Outro exercicio de objetos:
+
+let personagem = {
+    nome: "thais",
+    idade: 27,
+    formacao: [
+        {fundamental: 'Maia vinagre', ano: 2006},
+        {ensinoMedio: 'Argumento', ano: 2013},
+        {graduacao: 'UFF', ano: 2023},
+    ]
+}
+
+console.log(`${personagem.nome} terminou sua faculdade em ${personagem.formacao[2].ano}`);
