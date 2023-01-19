@@ -70,16 +70,25 @@
 
 // // console.log(somaQuadrados (3,3));
 
+// ---------------------------------------------
+// // Exercicio de arrays
+
 // let colors = ['blue', 'red','green'];
 // console.log(colors[1]); // resultado: red
 
+
+// // array dentro de array (usando o array anterior)
 // let lista = ['item', colors];
 
 // console.log(lista[2]);
 // // NÃO FUNCIONA, porque não existe item 2
+
 // console.log(lista[1]); // resultado: ['blue', 'red', 'green']
+
 // console.log(lista[1][0]); // resultado: blue
 
+// // -------------------------------- 
+// // Mais exercícios de array
 
 // let ingredientes =  [
 //     "agua",
@@ -91,6 +100,7 @@
 
 // //agora leite faz parte do array como sétimo (6º na ordem array) item 
 
+// // ------------------------------------------
 // // Aprendendo objetos:
 
 // // let quartoAlbum = {
@@ -111,11 +121,11 @@
 // console.log(`O 1º single de ${quartoAlbum.titulo} foi ${quartoAlbum.singles[0]}`); //forma de buscar algo no objeto
 
 // quartoAlbum.melhorMusica = "early morning";
-// quartoAlbum.lugarNasParadas += 4;
+// quartoAlbum.lugarNasParadas += 4; // adiciona +4 no número (no caso, fica 5 porque já tinha 1)
 
 // console.log(`Lugar nas paradas atual: ${quartoAlbum.lugarNasParadas}`);
 
-// quartoAlbum.singles.push('Outrageous');
+// quartoAlbum.singles.push('Outrageous'); // Adiciona um item ao array dentro do objeto
 
 // console.log(quartoAlbum.singles);
 
@@ -145,6 +155,7 @@
 
 // console.log(eu.nomeCompleto());
 
+// // ----------------------------------------------
 // // Testando repeticoes com array
 // let fruits = ["apple", "orange", "grape"];
 
@@ -152,6 +163,7 @@
 //     console.log(fruit);
 // };
 
+// // ----------------------------------------------
 // // exercicio de repeticao
 // let contagem = 0;
 
@@ -160,18 +172,22 @@
 //     contagem ++;
 // }
 
+// // ----------------------------------------------
+
 // // // testando stringzacao de arrays
 // let fruits = ["apple", "orange", "grape"];
 
 // stringFruits = fruits.join("! ");
 // console.log(stringFruits);
 
+// // ----------------------------------------------
 // // testando ordenacao de arrays
 // let fruits = ["orange", "apple", "grape"];
 // fruits.sort();
 // fruits.reverse();
 // console.log(fruits);
 
+// // ----------------------------------------------
 // // Treinando ordenação baseada em propriedade de objeto do array
 // let cars = [
 //     { brand: "fiat", year: 2017},
@@ -191,14 +207,16 @@
 
 // // outra forma de escrever isso: 
 
-// cars.sort((a,b) => {
-//     return a.year - b.year;
-// });
+// //  cars.sort((a,b) => {
+// //    return a.year - b.year;
+// // });
 
 // // outra forma de escrever isso ainda mais simplificada:
-// cars.sort((a,b) => a.year - b.year);
+// // cars.sort((a,b) => a.year - b.year);
 
-// console.log(cars);
+// // console.log(cars);
+
+// // ----------------------------------------------
 
 // // treinando iteracao de array: includes
 
@@ -210,3 +228,4 @@
 //     console.log("não tem uva");
 // }
 
+// // ----------------------------------------------
