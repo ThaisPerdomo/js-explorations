@@ -93,18 +93,18 @@
 
 // // Aprendendo objetos:
 
-// let quartoAlbum = {
-//     titulo: "In The Zone", //propriedade
-//     melhorMusica: 'showdown', // propriedade
-//     lugarNasParadas: 1, 
+// // let quartoAlbum = {
+// //     titulo: "In The Zone", //propriedade
+// //     melhorMusica: 'showdown', // propriedade
+// //     lugarNasParadas: 1, 
 
-//     pastAlbuns: {       // fazendo um objeto dentro do objeto
-//         primeiro: 'baby one more time',  
-//         segundo: 'oops i did it again',
-//         terceiro: 'britney'
-//     },
+// //     pastAlbuns: {       // fazendo um objeto dentro do objeto
+// //         primeiro: 'baby one more time',  
+// //         segundo: 'oops i did it again',
+// //         terceiro: 'britney'
+// //     },
 
-//     singles : ["toxic", "MATM","Everytime"],
+// //     singles : ["toxic", "MATM","Everytime"],
 
 // };
   
@@ -121,14 +121,91 @@
 
 // // Outro exercicio de objetos:
 
-let personagem = {
-    nome: "thais",
-    idade: 27,
-    formacao: [
-        {fundamental: 'Maia vinagre', ano: 2006},
-        {ensinoMedio: 'Argumento', ano: 2013},
-        {graduacao: 'UFF', ano: 2023},
-    ]
-}
+// let personagem = {
+//     nome: "thais",
+//     idade: 27,
+//     formacao: [
+//         {fundamental: 'Maia vinagre', ano: 2006},
+//         {ensinoMedio: 'Argumento', ano: 2013},
+//         {graduacao: 'UFF', ano: 2023},
+//     ]
+// }
 
-console.log(`${personagem.nome} terminou sua faculdade em ${personagem.formacao[2].ano}`);
+// console.log(`${personagem.nome} terminou sua faculdade em ${personagem.formacao[2].ano}`);
+
+let eu = {
+    nome: "thais",
+    sobrenome: "perdomo";
+    nomeCompleto: function() {
+        return this.nome + " " + this.sobrenome;
+        // poderia ser escrito assim tb: 
+        // return `${this.nome} ${this.sobrenome}`;
+    }
+} 
+
+console.log(eu.nomeCompleto());
+
+// // Testando repeticoes com array
+// let fruits = ["apple", "orange", "grape"];
+
+// for (let fruit of fruits){
+//     console.log(fruit);
+// };
+
+// // exercicio de repeticao
+// let contagem = 0;
+
+// while (contagem <= 100) {
+//     console.log(contagem);
+//     contagem ++;
+// }
+
+// // // testando stringzacao de arrays
+// let fruits = ["apple", "orange", "grape"];
+
+// stringFruits = fruits.join("! ");
+// console.log(stringFruits);
+
+// // testando ordenacao de arrays
+// let fruits = ["orange", "apple", "grape"];
+// fruits.sort();
+// fruits.reverse();
+// console.log(fruits);
+
+// // Treinando ordenação baseada em propriedade de objeto do array
+// let cars = [
+//     { brand: "fiat", year: 2017},
+//     { brand: "ferrari", year: 2008},
+//     { brand: "BMW", year: 2018},
+// ];
+
+// cars.sort((a,b) => {
+//     if (a.year > b.year) {
+//         return 1;
+//     } else if (a.year < b.year){
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// });
+
+// // outra forma de escrever isso: 
+
+// cars.sort((a,b) => {
+//     return a.year - b.year;
+// });
+
+// // outra forma de escrever isso ainda mais simplificada:
+// cars.sort((a,b) => a.year - b.year);
+
+// console.log(cars);
+
+// // treinando iteracao de array: includes
+
+// let fruits = ["orange", "apple", "grape", "uva"];
+
+// if (fruits.includes('uva')) {
+//     console.log("tem uva");
+// } else {
+//     console.log("não tem uva");
+// }
