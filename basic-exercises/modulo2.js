@@ -46,9 +46,45 @@
 
 // // Manipulando atributos (exercicio 3)
 
-function manipulandoAtributo() {
+// function manipulandoAtributo() {
 
-    const input = document.querySelector('input');
+//     const senhaDOM = document.querySelector('#senha');
     
-    console.log(input);
-}
+//     console.log(senhaDOM.getAttribute('placeholder'));
+
+//     if (senhaDOM.hasAttribute('name')){
+//         console.log("tem name");
+//     } else {
+//         console.log("nao tem name");
+//     }
+
+//     senhaDOM.setAttribute("placeholder", "placeholder alteradoo!")
+// }
+
+// // Exercicio 4: mostrar senha com set atribute 
+
+// function mostraSenha(){
+//     const senha = document.querySelector("#senhaEx4");
+//     // busca o input da senha e coloca na variavel
+//     const botao = document.querySelector("#botaoEx4");
+//     // busca o botao e coloca na variavel
+
+//     // aqui embaixo, ele vê se o atributo type tem o valor text
+//     if (senha.getAttribute('type') === 'text'){
+
+//         senha.setAttribute('type', 'password');
+//         // se tiver, muda pra password
+//         botao.value = "mostrar Senha";
+//         // altera o que está escrito no botao 
+
+//     } else {
+
+//         senha.setAttribute('type','text');
+//         // se não tiver em password, muda pra text.
+
+//         botao.value = "ocultar senha";
+//         // altera o que está escrito no botao
+//     }
+// }
+
+// // Trabalhando com classes
