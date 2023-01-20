@@ -88,3 +88,22 @@
 // }
 
 // // Trabalhando com classes
+
+// function alternaClasses(){
+//     const botao = document.querySelector("#exercicio5 button");
+
+//     botao.classList.replace("azul", "verde");
+// }
+
+// // Evento de teclado 1
+
+function teclouOQue(e) {
+    console.log(e.key); // retorna a tecla
+    console.log("shift?" + e.shiftKey); // retorna um boolean
+    console.log("ctrl?" + e.ctrlKey); // retorna um boolean
+    console.log("alt?" + e.altKey); // retorna um boolean
+}
+
+const inputTeclinha = document.querySelector('#inputEx6');
+
+inputTeclinha.addEventListener('keyup', teclouOQue)
