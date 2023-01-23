@@ -5,6 +5,7 @@ function escreveuOQue(e){
 
     //Aqui é uma função que eu jogo no event.Listener 
     // que basicamente só funciona quando o usuário terminar de dar enter
+    // O "e" é um parâmetro que vai pegar alguma informação, neste caso, da tecla em questão 
 
     if (e.key === "Enter"){
         const lista = document.querySelector("#listaDeCompras");
