@@ -207,3 +207,31 @@ RecemNascido.ExibeTotalOrelhas();
 console.log(`O bebê ${leito1.nome} tem ${leito1.idade} anos e ${RecemNascido.quantidadeOrelhas} orelhas`)
 
 // O mesmo vale pra variável quantidadeDeOrelhas 
+
+// // ----------------------------------------------------------------------------------------------------------
+// // Factory: Criando uma função que instancia algo de uma classe 
+
+class Paciente {
+
+    patologia = 'a definir';
+
+    constructor(nome){
+        this.nome = nome;
+    }
+}
+
+// A função abaixo instancia objetos de acordo com a classe acima 
+function novoPaciente(nome, patologia){
+    let p = new Paciente(nome);
+    // Forma de referenciar algo do constructor
+    p.patologia = patologia;
+    // Forma de referenciar uma propriedade de fora do constructor
+    return p;
+    // Não esquecer do return
+}
+
+let pacienteN01 = novoPaciente("Morpheu", "Herpes gatil");
+
+console.log (`O(a) ${pacienteN01.nome} tem ${pacienteN01.patologia.toLowerCase()}`);
+
+// // ----------------------------------------------------------------------------------------------------------
