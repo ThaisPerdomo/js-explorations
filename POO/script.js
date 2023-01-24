@@ -33,7 +33,7 @@ ultimoAlbum.cantora = "Britney e Madonna";
 console.log(`O primeiro álbum de ${primeiro.cantora} foi o ${primeiro.titulo}, lançado em ${primeiro.ano}`);
 console.log(`O álbum de ${ultimoAlbum.cantora} foi lançado em ${ultimoAlbum.ano}`)
 
-// ------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 // Outro exemplo de POO, aprendendo actions 
 
 class Player {
@@ -58,7 +58,7 @@ player1.subiuDeNivel(); // Executando a ação
 
 console.log(`O nível de ${player1.nome} atual é ${player1.nivel}`);
 
-// // ------------------------------------------------
+// // --------------------------------------------------------------------------------------------------
 // // Outro exemplo de POO
 // // Criando uma action para definir um tipo específico de info (boolean, number etc) a ser recebida numa propriedade
 
@@ -94,7 +94,7 @@ cliente1.contraiuDivida(500);
 
 console.log(`Corrigido: O cliente ${cliente1.nome} tem R$ ${cliente1.divida} de dívida`);
 
-// // ------------------------------------------------
+// // ----------------------------------------------------------------------------------------------------
 // // Outro exemplo de POO: Criando um getter e um setter 
 
 class Drag {
@@ -139,3 +139,71 @@ dragQueen1.alteraTotalDeConcursosVencidos = 30;
 console.log(`A drag ${dragQueen1.nomeCompleto} ganhou ${dragQueen1.totalDeVitorias} concursos de lipsync`);
 
 // Console log feito com dados puxados pelas funções get 
+
+// // ----------------------------------------------------------------------------------------------------------
+// // Outro exemplo de POO: Heranças
+
+class Pessoa {
+
+    deficiencias = 0;
+
+    constructor(nome){
+        this.nome = nome;
+    }
+
+}
+
+class Estudante extends Pessoa {
+    // Todo estudante é uma pessoa, então é possíve herdar algumas coisas da classe acima
+
+    constructor(nome, matricula){
+        super(nome);
+        // Esse super pega os dados da classe que vc está extendendo (neste caso, Pessoa)
+        // Neste caso, é uma função que puxa os dados do construtor da outra função 
+        this.matricula = matricula;
+    }
+
+}
+
+let cadastro1 = new Estudante("Thais", 114034038);
+// Instanciando o objeto 
+
+console.log(`${cadastro1.nome} tem ${cadastro1.deficiencias} deficiência(s)`)
+
+// Como pode ser observado, o 'deficiencias' foi algo herdado da classe Pessoa 
+// Isso se dá porque o cadastro foi feito em Estudante, ele herda tudo de Pessoa
+
+// // ----------------------------------------------------------------------------------------------------------
+// // Outro exemplo de POO: método e variáveis statics
+
+class RecemNascido{
+
+    static quantidadeOrelhas = 2;
+    // Foi criada uma variável que é estática. 
+    // Ou seja, ela só obecede a classe RecemNascido, não a objetos instanciados por RecemNascido
+
+    idade = 0;
+    // Variavel normal 
+
+    constructor(nome){
+        this.nome = nome;
+    }
+    //Constructor normal 
+
+    static ExibeTotalOrelhas(){
+        console.log(`O total de orelhas no corpo humano é ${this.quantidadeOrelhas}`);
+    } 
+    // Foi criada uma função que é estática. 
+    // Ou seja, ela só obecede a classe RecemNascido, não a objetos instanciados por RecemNascido
+
+}
+
+let leito1 = new RecemNascido("George");
+
+// Pra chamar as funções estáticas você não pode fazer um pessoaQueNasceu.ExibeTotalOrelhas()
+// Isso porque é uma função que obedece só à classe, não aos objetos
+RecemNascido.ExibeTotalOrelhas();
+
+console.log(`O bebê ${leito1.nome} tem ${leito1.idade} anos e ${RecemNascido.quantidadeOrelhas} orelhas`)
+
+// O mesmo vale pra variável quantidadeDeOrelhas 
