@@ -74,6 +74,8 @@ class Cliente {
     contraiuDivida(novaDivida){
         if(typeof novaDivida == "number"){
             this.divida = novaDivida;
+        } else {
+            console.log("Dívida não foi escrita corretamente, em números")
         }
     // Essa action faz com que só se aceite que se insira NÚMEROS na dívida
     }
@@ -92,3 +94,48 @@ cliente1.contraiuDivida(500);
 
 console.log(`Corrigido: O cliente ${cliente1.nome} tem R$ ${cliente1.divida} de dívida`);
 
+// // ------------------------------------------------
+// // Outro exemplo de POO: Criando um getter e um setter 
+
+class Drag {
+    
+    _concursosVencidos = 0
+    // Se utiliza um underline na frente da propriedade
+    // Quando se usa um getter e um setter pra uma propriedade em comum 
+    
+    constructor(nome, sobrenome){ 
+        // conceitos de constructor já foram vistos anteriormente
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+
+    get nomeCompleto(){
+        return `${this.nome} ${this.sobrenome}`;
+    } // Estabelecendo um função GET que pega as propriedades do constructor e junta num nome completo
+
+    get totalDeVitorias(){
+        return this._concursosVencidos;
+    } // Estabelendo uma função GET que pega a propriedade lá em cima. 
+    // É desvinculada da função set abaixo
+    // Porém, pra você puxar o dado que está com underline, você precisa dela; então provavelmente terá que usar as duas juntas 
+
+    set alteraTotalDeConcursosVencidos(novoNumeroVitorias){
+
+        if (typeof novoNumeroVitorias == 'number'){
+            this._concursosVencidos = novoNumeroVitorias;
+        }
+
+    } // Estabelecendo uma função SET que é pra MUDAR algo
+    // Neste caso, é pra mudar a propriedade _concursos Vencidos 
+}
+
+let dragQueen1 = new Drag("Kitara", "Ravanche");
+// Instanciando o objeto
+
+dragQueen1.alteraTotalDeConcursosVencidos = 30;
+
+// Alterando algo com a função set 
+
+console.log(`A drag ${dragQueen1.nomeCompleto} ganhou ${dragQueen1.totalDeVitorias} concursos de lipsync`);
+
+// Console log feito com dados puxados pelas funções get 
