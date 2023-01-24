@@ -7,7 +7,7 @@ class Albuns {
     // Isso aqui é uma propriedade que todos os objetos criados vão ter
     // Não é obrigatório ter essa propriedade mas pode-se criar quantas quiser
 
-    constructor (titulo, ano, firstsingle){
+    constructor(titulo, ano, firstsingle){
         // O constructor é uma função que constrói o modelo das coisas
         this.titulo = titulo;
         this.ano = ano;
@@ -40,7 +40,7 @@ class Player {
 
     nivel = 0;
     
-    constructor(nome){
+    constructor(nome) {
         this.nome = nome;
     } 
 
@@ -58,5 +58,37 @@ player1.subiuDeNivel(); // Executando a ação
 
 console.log(`O nível de ${player1.nome} atual é ${player1.nivel}`);
 
-// ------------------------------------------------
-// Outro exemplo de POO, criando uma action para definir um tipo específico de info a ser recebida
+// // ------------------------------------------------
+// // Outro exemplo de POO
+// // Criando uma action para definir um tipo específico de info (boolean, number etc) a ser recebida numa propriedade
+
+class Cliente {
+
+    divida = 0;
+
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    contraiuDivida(novaDivida){
+        if(typeof novaDivida == "number"){
+            this.divida = novaDivida;
+        }
+    // Essa action faz com que só se aceite que se insira NÚMEROS na dívida
+    }
+
+}
+
+let cliente1 = new Cliente("maria");
+
+cliente1.contraiuDivida('sim');
+// // Neste caso vai dar erro, quando exibir no console log vai dar que a dívida é 0
+// // Isso porque essa função só aceita números
+
+console.log(`O cliente ${cliente1.nome} tem R$ ${cliente1.divida} de dívida`);
+
+cliente1.contraiuDivida(500);
+
+console.log(`Corrigido: O cliente ${cliente1.nome} tem R$ ${cliente1.divida} de dívida`);
+
