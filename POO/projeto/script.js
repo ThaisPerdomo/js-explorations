@@ -111,8 +111,7 @@ class Button extends Input {
 // Implementação
 
 // Criando o formulário em si
-let formCriadoEmJS = new Formulario("areaFormulario", 'POST', 'https://site.com.br')
-
+let formCriadoEmJS = new Formulario(".areaFormulario", 'POST', 'https://site.com.br')
 
 
 // Fazendo um input de email com classe Input
@@ -137,5 +136,3 @@ console.log(formCriadoEmJS.conteudoDoFormulario);
 
 formCriadoEmJS.colocarTudoNaPagina();
 
-
-/// Não deu certo mas depois eu vejo onde eu errei. 
