@@ -1,6 +1,7 @@
 function clicou () {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((respostaPura) => {
+            console.log(`Status (em código): ${respostaPura.status}`);
             return respostaPura.json();
         })
         .then((respostaEmFormaDeObjeto) => {
