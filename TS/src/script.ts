@@ -139,3 +139,35 @@ function mensagem2(discografia: Discografia) {
 let nomeDOM = document.getElementById('nome') as HTMLInputElement;
 
 console.log(nomeDOM.value);
+
+/***
+ * Exemplo 8: Types literais
+ */
+// Types literais são tipos de dados que só podem ter um valor específico
+let mulherMaisBonita: 'thais' = 'thais'
+
+// Parecem inúteis, mas são muito úteis como o caso abaixo
+
+function mostraVerdades(alinhamento: 'left' | 'right' | 'center'){
+    return `<div style="text-align: ${alinhamento}">Olá, ${mulherMaisBonita}</div>`
+}
+
+mostraVerdades('left');
+
+/****
+ * Exemplo 9: Types literais com union types com types criadas: 
+*/
+
+type OpcoesDiv = {
+    width: number,
+    height: number,
+} // type criada
+
+// Abaixo, exemplo de union type com uma que é type literal!!! 
+
+function configuraDiv(props: OpcoesDiv | 'auto'){
+}
+
+// Nesse caso, você pode passar um objeto com as propriedades width e height, ou passar a string 'auto'
+configuraDiv({width: 100, height: 100});
+configuraDiv('auto');
