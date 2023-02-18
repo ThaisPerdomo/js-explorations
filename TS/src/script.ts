@@ -80,6 +80,62 @@ mostrarIdade(19);
 mostrarIdade("19");
 
 /**
- * Exemplo 5: Tipagem em interfaces (criar seu próprio tipo de dado)
+ * Exemplo 5: Criando tipagem (criar seu próprio tipo de dado): USAR PASCAL CASE
  */
 
+// Dá pra criar seu próprio tipo de dado de forma simples, como o exemplo abaixo. Porém, não é muito útil
+
+type NomeCompleto = string;
+
+let nome: NomeCompleto = "Thais Perdomo";
+
+type anoLancamento = string | number;
+
+let BOMT: anoLancamento = 1998;
+
+// Se torna útil quando se cria um type com mais de um dado, como no exemplo abaixo
+
+type User = {
+    nome: string,
+    idade: number
+};
+
+// Agora, neste caso, pra não ter o retrabalho de escrever {nome: string, idade: number} toda hora, 
+// eu posso tipar o parâmetro da função com o type User
+function mensagem(usuario: User) {
+    return "Olá, " + usuario.nome + ". Você tem " + usuario.idade + " anos.";
+}
+
+mensagem({nome: "João", idade: 19});
+
+/**
+ * Exemplo 6: Tipagem em interfaces: USAR PASCAL CASE
+ * */
+
+// A interface é uma forma de criar um tipo de dado, mas com mais recursos. 
+//No exemplo anterior, não é possível adicionar novos parâmetros ao type User. Com a interface, é.
+
+interface Discografia {
+    nomeDoAlbum: string,
+    lugarNasParadas: number;
+}
+
+interface Discografia{
+    anoDeLancamento: number,
+} // Aqui foi adicionado um novo parâmetro à interface Discografia	
+
+function mensagem2(discografia: Discografia) {
+    return "O álbum " + discografia.nomeDoAlbum + " foi lançado em " + discografia.anoDeLancamento + ".";
+}
+
+/**
+ * Exemplo 7: Type assertions
+ * */
+
+// Type assertions é uma forma de dizer ao typescript que você sabe o que está fazendo.
+// No exemplo abaixo, eu estou dizendo que o tipo do elemento é HTMLInputElement, mesmo que o typescript não saiba disso
+// O value é um atributo PRÓPRIO do HTMLInputElement, então o typescript não vai dar erro. 
+
+let nomeDOM = document.getElementById('nome') as HTMLInputElement;
+
+console.log(nomeDOM.value);
