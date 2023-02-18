@@ -171,3 +171,40 @@ function configuraDiv(props: OpcoesDiv | 'auto'){
 // Nesse caso, você pode passar um objeto com as propriedades width e height, ou passar a string 'auto'
 configuraDiv({width: 100, height: 100});
 configuraDiv('auto');
+
+/**
+ * Exemplo 10: Corrigindo o erro de tipagem de uma função (inferência literal)
+ */
+
+function fazerRequisicao(url: string, method: 'GET' | 'POST') {
+    //...
+}
+
+type Method = 'GET' | 'POST';
+let url = 'https://google.com';
+let method: Method = 'GET';
+fazerRequisicao(url, method); 
+
+// Aqui o typescript DARIA erro se não fosse o type Method criado acima, 
+// Isso porque ele não saberia se o método pode ser trocado pra algo além de GET ou POST
+
+/**
+ * 
+ * Exemplo 11: Corrigindo o erro de tipagem de uma função (inferência literal) com objetos 
+ */
+// O exemplo abaixo é quase o mesmo do acima; mas utiliza um objeto para corrigir o erro de tipagem
+function fazerRequisicao2(url: string, method: 'GET' | 'POST') {
+    //...
+}
+
+type DetalhesRequisicao = {
+    url2: string,
+    method2: 'GET' | 'POST'
+} //Aqui temos um type que espeficica que o método pode ser GET ou POST e que é usado no objeto abaixo
+
+let requisicao2: DetalhesRequisicao = {
+    url2: 'https://google.com',
+    method2: 'GET'
+}
+
+fazerRequisicao2(requisicao2.url2, requisicao2.method2); 
