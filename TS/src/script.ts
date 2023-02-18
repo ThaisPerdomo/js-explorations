@@ -14,3 +14,14 @@ botao.addEventListener("click", function () {
 let aleatoriedades: any = ['João', 'barco'];
 
 aleatoriedades.push(19);
+
+let nomes = ['João', 'Maria', 'José'];
+
+nomes.forEach(function (nome) {
+    if (typeof nome === 'string'){
+        console.log(nome.toUpperCase());
+    } else{
+        console.log(nome);
+    }
+});
+
