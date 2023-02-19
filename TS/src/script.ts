@@ -208,3 +208,40 @@ let requisicao2: DetalhesRequisicao = {
 }
 
 fazerRequisicao2(requisicao2.url2, requisicao2.method2); 
+
+/***
+ * Exemplo 12: Type DE funções com retorno
+ */
+
+type MathFunction = (x: number, y: number) => number;
+
+const soma: MathFunction = (n1, n2) => {
+    return n1 + n2;
+} 
+// Aqui eu estou dizendo que a variável soma é do tipo MathFunction, que é uma função que recebe dois números e retorna um número.
+// Esse type pode ser usado em qualquer funcao que tenha o mesmo formato
+// Exemplo:
+
+const subtracao: MathFunction = (n1, n2) => {
+    return n1 - n2;
+}
+
+/**
+ * Exemplo 13: Type DE funções sem retorno 
+ */
+
+// Vamos supor que temos uma função que não retorna nada
+
+function removerElemento(el: HTMLElement): void {
+    el.remove();
+} 
+
+// Porém, tem um OBS: pode se usar o retorno em casos de parar a função, como no exemplo abaixo
+// Mas, tem que estar dentro de um if. Como o exemplo abaixo
+
+function removerElemento2(el: HTMLElement): void {
+    if (el.id === 'naoRemover') {
+        return;
+    }
+    el.remove();
+} 
