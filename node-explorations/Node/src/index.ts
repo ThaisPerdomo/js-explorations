@@ -38,6 +38,6 @@ import Importados from './funcoes';
 
 console.log(`A mulher mais bonita do mundo é a ${Importados.mulherMaisBonita}`);
 
-console.log(`Olá! Você tem ${Importados.calculaIdade(2023, 1996)} anos.`);
+console.log(`Olá!!!! Você tem ${Importados.calculaIdade(2023, 1996)} anos.`);
 
 // OBS: tem que estar comentado para as de cima funcionarem. Só Funciona com o exemplo 3 do arquivo funcoes.ts descomentado

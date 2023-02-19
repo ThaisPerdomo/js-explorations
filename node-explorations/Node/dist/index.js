@@ -28,5 +28,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 const funcoes_1 = __importDefault(require("./funcoes"));
 console.log(`A mulher mais bonita do mundo é a ${funcoes_1.default.mulherMaisBonita}`);
-console.log(`Olá! Você tem ${funcoes_1.default.calculaIdade(2023, 1996)} anos.`);
+console.log(`Olá!!!! Você tem ${funcoes_1.default.calculaIdade(2023, 1996)} anos.`);
 // OBS: tem que estar comentado para as de cima funcionarem. Só Funciona com o exemplo 3 do arquivo funcoes.ts descomentado
