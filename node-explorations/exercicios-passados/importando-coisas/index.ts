@@ -34,10 +34,12 @@
  * Exemplo 3 de importação: importando tudo de um arquivo de forma moderna ES6 usando o DEFAULT
  */
 
-import Importados from './funcoes';
+// import Importados from './funcoes';
 
-console.log(`A mulher mais bonita do mundo é a ${Importados.mulherMaisBonita}`);
+// console.log(`A mulher mais bonita do mundo é a ${Importados.mulherMaisBonita}`);
 
-console.log(`Olá!!!! Você tem ${Importados.calculaIdade(2023, 1996)} anos.`);
+// console.log(`Olá!!!! Você tem ${Importados.calculaIdade(2023, 1996)} anos.`);
+
+// console.log("testando o git")
 
 // OBS: tem que estar comentado para as de cima funcionarem. Só Funciona com o exemplo 3 do arquivo funcoes.ts descomentado
