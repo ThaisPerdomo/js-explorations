@@ -1,5 +1,6 @@
 // Importanto o express para o nosso projeto
 import express, {Request, Response} from 'express';
+import path from 'path';
 
 // Importando as rotas
 import rotasPrincipais from './routes/index';
@@ -7,6 +8,9 @@ import rotasAdm from './routes/adm';
 
 // Criando a variável server (servidor) para armazenar o express  
 const server = express();
+
+// Criando uma rota para pasta public, utilizando o path.join para juntar o diretório do arquivo com a pasta public
+server.use(express.static(path.join(__dirname, '../public')));
 
 // Chamando as rotas no servidor
 server.use('/', rotasPrincipais);
