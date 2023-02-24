@@ -6,7 +6,20 @@ const router = Router();
 
 
 router.get('/', (req: Request, res: Response) => {
-    res.send('Página inicial');
+
+    let menorDeIdade: boolean = false;
+
+    let age: number = 15
+
+    
+    if(age < 18){
+        menorDeIdade = true;
+    }
+
+    res.render('home',{
+        age,
+        menorDeIdade
+    });
 });
 
 router.get('/contato', (req: Request, res: Response) => {
