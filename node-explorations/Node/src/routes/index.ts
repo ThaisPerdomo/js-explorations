@@ -36,8 +36,22 @@ router.get('/contato', (req: Request, res: Response) => {
     res.render('contato',{nome});
 });
 
-router.get('/sobre', (req: Request, res: Response) => {
-    res.render('sobre');
+router.get('/login', (req: Request, res: Response) => {
+    res.render('login');
+});
+
+router.post('/login-realizado', (req: Request, res: Response) => {
+    
+    let mostrarDados: boolean = false;
+
+    let usuario: string = req.body.usuario as string;
+    let senha: string = req.body.senha as string;
+    
+    if(req.body.usuario && req.body.senha){
+        mostrarDados = true;
+    }
+    
+    res.render('login',{usuario, senha, mostrarDados});
 });
 
 // Definindo rotas *dinâmicas* para a página inicial de requisicao GET

@@ -18,6 +18,9 @@ server.engine('mustache', mustache());
 // Criando uma rota para pasta public, utilizando o path.join para juntar o diretório do arquivo com a pasta public
 server.use(express.static(path.join(__dirname, '../public')));
 
+// Deixando nosso servidor preparado para receber dados do formulário de forma POST
+server.use(express.urlencoded({extended: true}));
+
 // Chamando as rotas no servidor
 server.use('/', rotasPrincipais);
 server.use('/adm', rotasAdm);
