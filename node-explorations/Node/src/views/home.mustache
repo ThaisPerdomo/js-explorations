@@ -9,7 +9,26 @@
         {{#menorDeIdade}}
         Here's your suquinho
         {{/menorDeIdade}}
+        
+        {{^menorDeIdade}}
+        Here's your cachaça
+        {{/menorDeIdade}}
 
+        <ul>
+            {{#frases}}
+            <li>{{.}}</li>
+            {{/frases}}
+        </ul>
+
+        {{^frases}}
+            <p>Não há frases hoje</p>
+        {{/frases}}
+
+        <ul>
+            {{#top3}}
+            <li>Álbum: {{title}} Artista: {{artist}}</li>
+            {{/top3}}
+        </ul>
 
     </body>
 </html>
