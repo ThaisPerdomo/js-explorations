@@ -1,0 +1,16 @@
+{{>partials/header}}
+    Conteúdo da página de contato
+
+    <form method="GET">
+    
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="submit" value="Enviar">
+    
+    </form>
+
+    {{#nome}}
+        <hr/>
+        <h1>Olá {{nome}}</h1>
+    {{/nome}}
+
+{{>partials/footer}}

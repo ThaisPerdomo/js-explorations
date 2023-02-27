@@ -32,11 +32,12 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.get('/contato', (req: Request, res: Response) => {
-    res.send('Página de contato');
+    let nome: string = req.query.nome as string;
+    res.render('contato',{nome});
 });
 
 router.get('/sobre', (req: Request, res: Response) => {
-    res.send('Página sobre');
+    res.render('sobre');
 });
 
 // Definindo rotas *dinâmicas* para a página inicial de requisicao GET
@@ -45,6 +46,7 @@ router.get('/noticia/:slug', (req: Request, res: Response) => {
     let slug: string = req.params.slug;
     res.send(`A noticia é ${slug}`);
 });
+
 
 router.get('/voo/:origem-:destino', (req: Request, res: Response) => {
     let origem: string = req.params.origem;

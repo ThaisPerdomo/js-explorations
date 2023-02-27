@@ -1,34 +1,30 @@
-<html>
-    <head>
-        <title>Testeeee</title>
-    </head>
-    <body>
-        <h1>Teste</h1>
-        <p>Oi! Você tem {{age}} anos</p>
+{{>partials/header}}
+    Oi
 
-        {{#menorDeIdade}}
+    <p>Oi! Você tem {{age}} anos</p>
+
+    {{#menorDeIdade}}
         Here's your suquinho
-        {{/menorDeIdade}}
-        
-        {{^menorDeIdade}}
+    {{/menorDeIdade}}
+
+    {{^menorDeIdade}}
         Here's your cachaça
-        {{/menorDeIdade}}
+    {{/menorDeIdade}}
 
-        <ul>
-            {{#frases}}
-            <li>{{.}}</li>
-            {{/frases}}
-        </ul>
-
-        {{^frases}}
-            <p>Não há frases hoje</p>
+    <ul>
+        {{#frases}}
+        <li>{{.}}</li>
         {{/frases}}
+    </ul>
 
-        <ul>
-            {{#top3}}
-            <li>Álbum: {{title}} Artista: {{artist}}</li>
-            {{/top3}}
-        </ul>
+    {{^frases}}
+        <p>Não há frases hoje</p>
+    {{/frases}}
 
-    </body>
-</html>
+    <ul>
+        {{#top3}}
+        <li>Álbum: {{title}} Artista: {{artist}}</li>
+        {{/top3}}
+    </ul>
+
+{{>partials/footer}}
