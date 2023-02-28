@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
 
+import { Produto } from '../models/Product';
+
 
 export const home = (req: Request, res: Response) => {
+
+    let produtos = Produto.exibirTodos();
 
     let menorDeIdade: boolean = false;
 
@@ -23,7 +27,8 @@ export const home = (req: Request, res: Response) => {
             {title: 'Future Nostalgia', artist: 'Dua Lipa'},
             {title: 'Planet Her', artist: 'Doja Cat'},
             {title: 'Positions', artist: 'Ariana Grande'},
-        ]
+        ],
+        produtos 
     });
 }
 
