@@ -7,6 +7,11 @@ import mustache from 'mustache-express';
 import rotasPrincipais from './routes/index';
 import rotasAdm from './routes/adm';
 
+// Importando e configurando o dotenv para configurar as variáveis de ambiente
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 // Criando a variável server (servidor) para armazenar o express  
 const server = express();
 
@@ -30,5 +35,5 @@ server.use((req: Request, res: Response) => {
     res.status(404).send('Página não encontrada');
 });
 
-server.listen(80); 
-// Para criarmos um servidor, devemos utilizar a propriedade listen para ficar "escutando" uma porta, como a 3000.  A padrão para sites html é 80 nao 3000
+server.listen(process.env.PORT); 
+// Para criarmos um servidor, devemos utilizar a propriedade listen para ficar "escutando" uma porta, como a 3000. 
