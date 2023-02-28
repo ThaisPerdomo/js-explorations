@@ -1,71 +1,25 @@
 import { Router, Request, Response } from 'express';
+import * as homeController from '../controllers/homeController';
+import * as dinamicasControllers from '../controllers/dinamicasControllers';
 
 const router = Router();
 
 // Definindo rotas *estática* para a página inicial de requisicao GET
 
 
-router.get('/', (req: Request, res: Response) => {
+router.get('/', homeController.home);
 
-    let menorDeIdade: boolean = false;
+router.get('/contato', homeController.contato);
 
-    let age: number = 25
+router.get('/login', homeController.login);
 
-    
-    if(age < 18){
-        menorDeIdade = true;
-    }
-
-    res.render('home',{
-        age,
-        menorDeIdade,
-        frases: [
-            'Se a vida te der limões, faça uma limonada',
-            'Pau que nasce torto, nunca se endireita',
-        ],
-        top3: [
-            {title: 'Future Nostalgia', artist: 'Dua Lipa'},
-            {title: 'Planet Her', artist: 'Doja Cat'},
-            {title: 'Positions', artist: 'Ariana Grande'},
-        ]
-    });
-});
-
-router.get('/contato', (req: Request, res: Response) => {
-    let nome: string = req.query.nome as string;
-    res.render('contato',{nome});
-});
-
-router.get('/login', (req: Request, res: Response) => {
-    res.render('login');
-});
-
-router.post('/login-realizado', (req: Request, res: Response) => {
-    
-    let mostrarDados: boolean = false;
-
-    let usuario: string = req.body.usuario as string;
-    let senha: string = req.body.senha as string;
-    
-    if(req.body.usuario && req.body.senha){
-        mostrarDados = true;
-    }
-    
-    res.render('login',{usuario, senha, mostrarDados});
-});
+router.post('/login-realizado', homeController.loginRealizado);
 
 // Definindo rotas *dinâmicas* para a página inicial de requisicao GET
 
-router.get('/noticia/:slug', (req: Request, res: Response) => {
-    let slug: string = req.params.slug;
-    res.send(`A noticia é ${slug}`);
-});
+router.get('/noticia/:slug', dinamicasControllers.noticias);
 
 
-router.get('/voo/:origem-:destino', (req: Request, res: Response) => {
-    let origem: string = req.params.origem;
-    let destino: string = req.params.destino;
-    res.send(`O voo é de ${origem.toUpperCase()} para ${destino.toUpperCase()}`);
-});
+router.get('/voo/:origem-:destino', dinamicasControllers.voos);
 
 export default router;
