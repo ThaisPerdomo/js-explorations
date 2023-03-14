@@ -1,0 +1,247 @@
+[33mcommit f40b92f062f2a3b18c548fa301184c4a4fe1dc1a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Mar 14 00:50:19 2023 -0300
+
+    model mongo
+
+[33mcommit f617f77001ca9f5f88f7015424c2ce6988a331a5[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Mar 10 17:01:27 2023 -0300
+
+    novo projeto de node: nosql
+
+[33mcommit 9c6ecbcd77b46907a4c662adebfcbc82a994cc21[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Mar 10 16:54:29 2023 -0300
+
+    novo projeto node
+
+[33mcommit 9159a3145ca957769ff10a778e6d991e0a5a23d7[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Mar 10 16:51:48 2023 -0300
+
+    novo projeto para começar estudos de nosql
+
+[33mcommit e98533b0ad087e74a699f950b9fe41c8602dc966[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 28 17:00:17 2023 -0300
+
+    arquivo .env adicionado e variavel de ambiente criada :D
+
+[33mcommit 8d017dc2a966dd581d85db489d1a78364a265ca7[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 28 16:44:51 2023 -0300
+
+    models
+
+[33mcommit d50a3d702d79c39427edaaf31a25d5a3b10bcc4e[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 28 11:49:54 2023 -0300
+
+    novos controllers
+
+[33mcommit 30a55d06df9a8d9c37c785a13f647dc420dd3763[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 28 11:14:40 2023 -0300
+
+    controllers adicionados e separadinhos :D
+
+[33mcommit 334c706281670f152fcd33622fe067ae847cb10b[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Mon Feb 27 16:57:26 2023 -0300
+
+    metodo post
+
+[33mcommit b84c45a15629a1734570faa558635c4e92bc8ac2[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Mon Feb 27 15:04:42 2023 -0300
+
+    partial views adicionada; formulário com recebimento de dados na pagina contato
+
+[33mcommit a95aae4c71defa66428863b678b4e9f1690470b2[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Mon Feb 27 13:07:19 2023 -0300
+
+    partials footer e header add
+
+[33mcommit 59146527d3880d48a9feaec3a1d6e740ad38a391[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Mon Feb 27 12:57:51 2023 -0300
+
+    novos arquivos view adicionados. treinei exibição de lista e else em mustache
+
+[33mcommit 181faf2883d4c8f34d3c7e5a7853d760f2e0d10b[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 24 19:44:27 2023 -0300
+
+    rotas, mustache etc
+
+[33mcommit 89a040c70c48efd90fac685bebc06b9b544fba8c[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 24 14:05:59 2023 -0300
+
+    rota para pasta public com path join
+
+[33mcommit aad37dd1b48f1fb425777607542613df44f97dd9[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 24 12:33:15 2023 -0300
+
+    rotas node
+
+[33mcommit 385ab344906f388e59b1fce2686c193a262627e3[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 21 21:57:19 2023 -0300
+
+    rotas dinamicas
+
+[33mcommit ca3ca2a4819234a13ad2569cd539b8ded4cdb797[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 21 20:51:10 2023 -0300
+
+    descricao adicionada no metodo get
+
+[33mcommit 8142f3c5359501efdefb4cfd5c90e57cbfdcaed5[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 21 20:50:34 2023 -0300
+
+    descricao adicionada no metodo get
+
+[33mcommit 0ce921f25c7b4abae324b6f7bde87a97ef42b5ba[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 21 20:46:31 2023 -0300
+
+    exercicios passados separados em uma pasta e arquivo de servidor adicionado
+
+[33mcommit 752dc2afce4238040964736bbed6cdee416923cb[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Mon Feb 20 11:47:22 2023 -0300
+
+    tsconfig alterado pra remover comentarios
+
+[33mcommit d898c854bd845cc945ce7dfc56077f30d29d3600[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sun Feb 19 20:07:35 2023 -0300
+
+    typo
+
+[33mcommit 4b92acfa6fb1f88f007e4dbab9088f8dc2a4ea69[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sun Feb 19 19:17:27 2023 -0300
+
+    importacao e exportacao de uma arquivo pro outro: exemplos
+
+[33mcommit 76bac7b36e271e3f1e946c9cc2be92f87a295148[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sun Feb 19 17:25:36 2023 -0300
+
+    arquivo gitignore adicionado
+
+[33mcommit 0ea74e40d567c451426a730703b9753848d83e46[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sun Feb 19 17:22:29 2023 -0300
+
+    node first commit
+
+[33mcommit b979854195a34dc05015708279f75531928daa5a[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sun Feb 19 16:11:36 2023 -0300
+
+    commit de carnavrau
+
+[33mcommit 6bdd4c6a5c6f069064c81dacea24b7bf17e96736[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sat Feb 18 14:10:35 2023 -0300
+
+    TS
+
+[33mcommit 486f1b84ba4aa88e2f1768bba1d93bfe59481dc3[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sat Feb 18 00:55:20 2023 -0300
+
+    ts
+
+[33mcommit ac064447bcb5b6dc19ffe1931188a4943e5e11c4[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Sat Feb 18 00:45:58 2023 -0300
+
+    ts
+
+[33mcommit 78340ecabec4ed306bae765e6f6338c8a2a5b653[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 17 23:07:25 2023 -0300
+
+    Fiz o TS todo comentado
+
+[33mcommit 276a5be36bba597abe4abcc6a568e4c3f247183d[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 17 22:41:01 2023 -0300
+
+    ts
+
+[33mcommit d17d2956514dc8a47d89396d62e318c4fa346a5c[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 17 16:40:24 2023 -0300
+
+    + ts
+
+[33mcommit 20a1031999b51850388eb91a5d121bde5409248e[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 17 15:22:29 2023 -0300
+
+    .
+
+[33mcommit d01be00203286e9af33343347181f2653debd2ea[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Feb 17 15:16:50 2023 -0300
+
+    ts1st commit
+
+[33mcommit 7e564bf3152d8eca6ea52baba22029aa6080ee31[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 14 16:18:45 2023 -0300
+
+    pasta deletada
+
+[33mcommit 98008b381e280053046e4b6bee01f7469310553b[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 14 13:49:08 2023 -0300
+
+    readme adiionados em cada pasta
+
+[33mcommit b829713b4b1192a1945f33d93a72d66beced5b19[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Tue Feb 14 13:44:41 2023 -0300
+
+    novas pastas para novo projeto de POO
+
+[33mcommit fb4a749951a6cc727b40eb61ff6f1cdd4f9b0328[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Jan 27 20:25:06 2023 -0300
+
+    await e async
+
+[33mcommit 05d1f776de23e2cbb3bceffd453140b44622b13a[m
+Author: Thais Perdomo <89431979+ThaisPerdomo@users.noreply.github.com>
+Date:   Fri Jan 27 19:10:04 2023 -0300
+
+    corrigido erro no seletor do criador de formulario
+
+[33mcommit 6138b2b25613922b90451d9f505032846ab4230f[m
+Author: ThaisPerdomo <thaisp@id.uff.br>
+Date:   Fri Jan 27 14:26:04 2023 -0300
+
+    status de requisicao adicionado
+
+[33mcommit 859a0fa63bef864df32d2b3ce7e62b2a5e7a32c9[m
+Author: ThaisPerdomo <thaisp@id.uff.br>
+Date:   Fri Jan 27 14:06:49 2023 -0300
+
+    catch e finally
+
+[33mcommit c175477c5565dcf7a3d4ca21e6bbd2e573bf4a2c[m
+Author: ThaisPerdomo <thaisp@id.uff.br>
+Date:   Fri Jan 27 13:45:51 2023 -0300
+
+    corrigi o eventlistener
+
+[33mcommit bf506facd15f0e7de2ee6dd5386e3e
